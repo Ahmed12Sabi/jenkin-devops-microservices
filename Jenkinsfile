@@ -19,6 +19,21 @@ pipeline{
 			}
 		}
 	}
+
+	post{
+		always{
+			echo "just check..."
+		}
+		success{
+			echo "I am ok"
+		}
+
+		failure{
+			echo "I am filed"
+		}
+
+
+	}
 	
 		
 	
