@@ -5,6 +5,11 @@ pipeline{
 		stage('Build'){
 			steps{
 			echo "Build"
+			echo "PATH - $PATH"
+			echo "BUILD_NUMBER - $env.BUILD_NO"
+			echo "BUILD_TAG - $env.BUILD_TAG"
+			echo "JOB_ID - $env.JOB_ID"
+			echo "BUILD_URL - $env.BUILD_URL"
 			}
 		}
 		stage('Test'){
