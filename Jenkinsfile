@@ -1,4 +1,3 @@
-
 pipeline{
 	agent any
 
@@ -46,7 +45,7 @@ pipeline{
 			steps{
 				
 				script{
-					dockerImage = docker.build("ahmedsabiullah/currency-exchange-devops:${env.BUILD_TAG}")
+					dockerImage = docker.build("Ahmed12Sabi/jenkin-devops-microservices:${env.BUILD_TAG}")
 					}
 				}
 				}
