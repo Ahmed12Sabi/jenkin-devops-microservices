@@ -1,4 +1,4 @@
-//scripted pipeline
+
 pipeline{
 	agent any
 
@@ -44,7 +44,7 @@ pipeline{
 		
 		stage('Build Docker Image'){
 			steps{
-				//"docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"
+				
 				script{
 					dockerImage = docker.build("ahmedsabiullah/currency-exchange-devops:${env.BUILD_TAG}")
 					}
